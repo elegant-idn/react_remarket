@@ -1,0 +1,179 @@
+@import "../variables";
+header{
+  max-width: 2222px;
+  margin: auto;
+  .header{
+    background: url("/images/design/bg-header.jpg") no-repeat;
+    background-size: 100% 100%;
+    padding-top: 30px;
+    position: relative;
+    .mac-right{
+      position: absolute;
+      bottom: 30px;
+      right: 0;
+    }
+    .header-logo{
+      margin-top: 5px;
+    }
+    .header-menu{
+      float: right;
+      li{
+        display: inline-block;
+        a{
+          font-family: 'Helvetica';
+          color: #fff;
+          padding-right: 30px;
+          font-size: 14px;
+          font-weight: 100;
+        }
+        .basket{
+          position: relative;
+          .count{
+            position: absolute;
+            top: 12px;
+            left: 10px;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            color: #21bdc5;
+            font-size: 10px;
+            text-align: center;
+          }
+        }
+        .login{
+          font-weight: 100;
+          display: inline-block;
+          font-family: 'Helvetica';
+          color: #fff;
+          margin-right: 30px;
+          padding: 10px 35px;
+          font-size: 14px;
+          border: 2px solid #21d9ae;
+          border-radius: 3px;
+        }
+        .fr{
+          float: none;
+        }
+      }
+    }
+    .header-bottom{
+      padding-top: 120px;
+      padding-bottom: 60px;
+      position: relative;
+      p{
+        font-size: 14px;
+        color: #fff;
+        font-weight: 100;
+        letter-spacing: 1px;
+      }
+      h1{
+        color: #fff;
+        font-size: 56px;
+      }
+      .devices{
+        margin: 45px 0 25px 0;
+
+        .tooltipImg{
+          color: #222222;
+          font-size: 12px;
+          position: relative;
+          span{
+            position: absolute;
+            bottom: 40px;
+            left: -24px;
+            padding: 6px 10px;
+            background: #fff;
+            width: 126px;
+            border-radius: 5px;
+            &:after{
+              content: '';
+              position: absolute;
+              left: 44%;
+              top: 31px;
+              border-top: 7px solid #fff;
+              border-right: 7px solid transparent;
+              border-left: 7px solid transparent;
+            }
+          }
+        }
+        img{
+          margin-right: 30px;
+          display: inline-block;
+        }
+      }
+      .callToUs{
+        color: #fff;
+        font-size: 18px;
+        text-decoration: underline;
+        font-weight: 100;
+      }
+      .buttons{
+        margin: 40px 0 60px 0;
+        a{
+          display: inline-block;
+          padding: 15px 18px;
+          color: #fff;
+          font-size: 11px;
+          text-transform: uppercase;
+          border: 2px solid rgba(255, 255, 255, 1.0);
+          border-radius: 2px;
+          margin-right: 10px;
+          letter-spacing: 2px;
+          &:hover{
+            color: #08A98B;
+            background: #fff;
+            border: 2px solid rgba(255, 255, 255, 1.0);
+            span{
+              background: #f2f5f4;
+            }
+          }
+          span{
+            display: inline-block;
+            margin-left: 10px;
+            background: #00ba75;
+            border-radius: 20px;
+            padding: 2px 6px 2px 22px;
+          }
+        }
+      }
+      .assistant{
+        position: absolute;
+        bottom: 0;
+        left: 55%;
+        z-index: 2;
+        .say{
+          position: absolute;
+          top: 112px;
+          left: 181px;
+          background: #fff;
+          color: #000;
+          padding: 25px;
+          width: 245px;
+          &:before{
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 50px;
+            border-top: 0px solid transparent;
+            border-bottom: 26px solid transparent;
+            border-right: 15px solid #fff;
+          }
+          p{
+            font-family: $font-family-sans-serif;
+            color: #989E9B;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+      .header-verkaufen {
+      }
+      }
+    }
+  }
+p{
+  color: red;
+}
+

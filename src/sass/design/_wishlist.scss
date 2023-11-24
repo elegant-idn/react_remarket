@@ -1,0 +1,351 @@
+.bg-light-grey{
+  background: #F7FAF9 !important;
+}
+
+footer{
+  background: #fff;
+  width: 100% !important;
+
+  @media(min-width: 992px){
+    .container-fluid{
+      width: 75%;
+    }
+  }
+}
+
+.wishlist-page{
+  max-width: 1520px;
+  margin: 0 auto;
+
+  .container-fluid{
+    padding: 0 10px;
+  }
+
+  .btn{
+    height: 62px;
+    position: relative;
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 130%;
+    font-family: 'Raleway';
+    letter-spacing: 0;
+    padding: 12px 31px 12px 54px;
+    width: 100% ;
+    white-space: unset;
+    &:after {
+      content: url(/images/otherProdCart1.svg);
+      margin-right: 15px;
+      left: 43px;
+      top: 35%;
+      position: absolute;
+    }
+  }
+
+  h1{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    font-family: 'Raleway';
+    margin: 0 !important;
+  }
+
+  .navigation-row {
+    margin-bottom: 17px;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    a {
+      display: inline-block;
+      position: relative;
+      margin-right: 8px;
+      padding-right: 14px;
+      font-size: 12px;
+      font-weight: 500;
+      text-align: left;
+      color: #000000;
+      &:after {
+        content: url(/images/nav-arrow.svg);
+        position: absolute;
+        top: 4px;
+        right: 0;
+        width: 4px;
+        height: 4px;
+      }
+    }
+
+    span {
+      font-family: 'Raleway';
+      padding-top: 2px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: #898999;
+    }
+  }
+
+  .offer-tab-buttons{
+    width: 100%;
+    background: #fff;
+    color: #90A397;
+  }
+
+  .wishlist-wrapper{
+    .items-bar{
+      display: none;
+    }
+    .items{
+      margin-bottom: 81px;
+      .item{
+        position: relative;
+        background: #FFFFFF;
+        border-radius: 2px;
+        margin-bottom: 8px;
+        padding: 30px 10px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-family: 'Raleway';
+        cursor: pointer;
+      }
+      .item-img{
+        width: 90px;
+        height: 84px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          object-fit: contain;
+          width: 80%;
+        }
+      }
+      .icon-cross{
+        background: none;
+        border: none;
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        padding: 0;
+      }
+      .item-description{
+        max-width: 160px;
+        margin-left: 22px;
+        font-size: 16px;
+        line-height: 19px;
+      }
+      p{
+        font-weight: 500;
+        margin: 0 0 8px ;
+        padding: 0;
+      }
+      .price{
+        font-weight: 600;
+        color: #161616;
+        display: block;
+        margin-bottom: 8px;
+      }
+      .stock-status{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #5BC799;
+        display: inline-block;
+
+      }
+      .btn{
+        margin: 16px auto 0;
+      }
+    }
+
+  }
+
+  @media (min-width: 600px){
+    .wishlist-wrapper{
+      .items{
+        .btn{
+          margin-top: 0;
+          width: fit-content;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px){
+    .wishlist-wrapper{
+      .items-bar{
+        display: flex;
+        background: #fff;
+        padding: 24px 36px 24px 64px;
+        margin-bottom: 24px;
+        border-radius: 2px;
+        width: 100%;
+
+        h3{
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+          color: #9AB6A7;
+          margin: 0;
+        }
+
+        .name{
+          width: 45%;
+        }
+
+        .price{
+          width: 17%;
+        }
+
+        .empty{
+          width: 284px;
+        }
+      }
+      .items{
+        width: 100%;
+        .icon-cross{
+          position: static;
+          margin-right: 26px;
+        }
+        .item{
+          padding: 10px 36px 10px 25px;
+        }
+        .item-description{
+          display: flex;
+          flex: 1;
+          justify-content: space-between;
+          align-items: center;
+          max-width: none;
+          margin-right: 25px;
+          font-size: 16px;
+          line-height: 19px;
+        }
+        p{
+          margin: 0;
+          width: 270px;
+        }
+        .price{
+          margin: 0;
+        }
+        .btn{
+          padding: 24px 31px 24px 54px;
+          margin-top: 0;
+          height: 68px;
+
+          &:after{
+            left: 21px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .offer-tab-buttons{
+      max-width: 270px;
+      margin-top: 25px;
+    }
+    .navigation-row{
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    .wishlist-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      h1{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+      }
+
+      .items-bar{
+        .name{
+          width: 44%;
+        }
+
+        .price{
+          width: 15%;
+        }
+      }
+      .items{
+        margin-bottom: 85px;
+        .item{
+          margin-bottom: 16px;
+        }
+        .item-img{
+          width: 140px;
+          height: 120px;
+        }
+        .item-description{
+          margin-right: 8%;
+          font-size: 18px;
+          line-height: 21px;
+
+          .stock-status{
+            font-size: 18px;
+            line-height: 21px;
+          }
+        }
+      }
+
+      h1{
+        width: 50%;
+      }
+
+      .wishlist-tabs-button{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wishlist-wrapper {
+
+      .items-bar {
+        .name {
+          width: 44%;
+        }
+
+        .price {
+          width: 17%;
+        }
+      }
+    }
+  }
+  @media (min-width: 1480px) {
+    .wishlist-wrapper {
+
+      .items-bar {
+        .name {
+          width: 45%;
+        }
+
+        .price {
+          width: 17%;
+        }
+      }
+    }
+  }
+  @media (min-width: 1540px) {
+    .wishlist-wrapper {
+
+      .items-bar {
+        .name {
+          width: 44%;
+        }
+
+        .price {
+          width: 19%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1117 @@
+@import "../variables";
+
+.versichernPage {
+  padding-top: 100px;
+  background: #f8fafa;
+  font-family: "Raleway", sans-serif;
+  .versichernPageCenter {
+    margin: 0 auto;
+  }
+  .inpuErrors {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 5px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1em;
+    color: red;
+  }
+}
+
+.versichernPageMarkup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.versichernMainText {
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  color: #23224d;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 17px;
+    top: 16%;
+    display: inline-block;
+    width: 28px;
+    height: 2px;
+    background-color: #02ca95;
+  }
+}
+
+.versichernTitle {
+  padding-top: 70px;
+  margin-bottom: 25px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.78;
+  letter-spacing: normal;
+  color: #2c3e50;
+}
+
+.versichernItemText {
+  display: flex;
+  align-items: flex-start;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #989e9b;
+  padding-top: 25px;
+  .versichernImage {
+    padding-right: 25px;
+  }
+}
+
+.paymentPage {
+  .insuranceHelp {
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    .insuranceHelpHeader,
+    .insuranceHelpBottom {
+      text-align: center;
+      margin-top: 40px;
+      // border-bottom: 1px solid #ebedec;
+      .logos {
+        img {
+          width: 128px;
+          height: 32px;
+        }
+      }
+      .insuranceHelpTitle {
+        font-size: 36px;
+        font-weight: 500;
+        color: #23224d;
+      }
+      .insuranceHelpDesc {
+        font-size: 14px;
+        font-weight: 500;
+        color: #989e9b;
+        padding: 24px 150px;
+        span {
+          font-weight: 600;
+          color: #02ca95;
+        }
+      }
+    }
+    .insuranceHelpScroll {
+      text-align: center;
+      position: relative;
+      padding: 15px 0px;
+      .insuranceHelpScrollLink {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+      .insuranceHelpScrollButton {
+        width: 72px;
+        height: 72px;
+        border-radius: 3px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.04),
+          0 4px 8px 0 rgba(3, 201, 108, 0.12);
+        background-color: #02ca95;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        img {
+          margin-top: 26px;
+        }
+      }
+    }
+    .insuranceHelpScroll:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      border-top: solid 1px #ebedec;
+      width: 100%;
+      transform: translateY(-50%);
+    }
+    .insuranceHelpBody {
+      margin: 16px;
+      border-radius: 3px;
+      background-color: #e9f6f2;
+      .insuranceHelpBodyTitle {
+        display: flex;
+        div {
+          font-size: 18px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.78;
+          letter-spacing: normal;
+          color: #2c3e50;
+        }
+        .insuranceHelpLeft,
+        .insuranceHelpRight {
+          width: 50%;
+          padding: 30px 40px;
+        }
+      }
+      .insuranceHelpItem {
+        display: flex;
+        .insuranceHelpLeft,
+        .insuranceHelpRight {
+          width: 50%;
+          padding: 0px 40px;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.43;
+          letter-spacing: normal;
+          color: #989e9b;
+          margin-top: 15px;
+        }
+      }
+    }
+    .insuranceHelpBottom {
+      border-bottom: none;
+    }
+  }
+  .versichernForm {
+    max-width: none;
+    box-shadow: none;
+    padding: 0px;
+    margin-top: 0px;
+    .formHeader {
+      text-align: center;
+      .formTitle {
+        padding-top: 48px;
+        font-size: 36px;
+        font-weight: 500;
+        color: #23224d;
+      }
+      .formDesc {
+        padding: 24px 168px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #989e9b;
+        border-bottom: solid 1px #ebedec;
+      }
+    }
+    .formBody {
+      padding: 48px 10px 36px 37px;
+      .versichernMiniForm {
+        .tooltip1,
+        .tooltip2 {
+          bottom: 21.3%;
+        }
+      }
+    }
+    .inpuErrors {
+      margin: 0;
+      padding: 0;
+      font-size: 1.2rem;
+      text-align: left;
+      margin-top: 5px;
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      line-height: 1em;
+      color: red;
+    }
+  }
+}
+.versichernForm {
+  padding: 48px 10px 36px 37px;
+  width: 100%;
+  max-width: 552px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.11),
+    0 8px 16px 0 rgba(3, 201, 108, 0.04);
+  z-index: 2;
+  margin-top: 37px;
+  margin-bottom: 150px;
+  opacity: 1;
+  transition: opacity 5s ease-in-out;
+  .wrapLabel {
+    display: flex;
+    margin-bottom: 28px;
+    .inpuErrorsGender {
+      margin: 0;
+      padding: 0;
+      font-size: 1.2rem;
+      text-align: left;
+      margin-top: 5px;
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      line-height: 1em;
+      color: red;
+      position: absolute;
+      width: 200px;
+      top: 17px;
+    }
+    label {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.5;
+      text-align: left;
+      color: #989e9b;
+      display: flex;
+      margin-right: 30px;
+      position: relative;
+      input[type="radio"] {
+        width: 1px;
+        padding: 0;
+        margin-right: 25px;
+        outline: none;
+      }
+      span {
+        position: absolute;
+        left: 0;
+        background: #fff;
+        width: 18px;
+        height: 18px;
+        border: solid 1px #e8ebe9;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 8px;
+        color: #00cb94;
+        &.check {
+          border-radius: 0;
+          position: relative;
+        }
+        .versichernCheckbox {
+          position: absolute;
+          left: 0;
+          background: #fff;
+          width: 18px;
+          height: 18px;
+          border: solid 1px #e8ebe9;
+          display: inline-block;
+          border-radius: 50%;
+          margin-right: 8px;
+          color: #00cb94;
+          &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            left: 5px;
+            top: 5px;
+            background: #00cb94;
+          }
+        }
+      }
+      input[type="radio"]:checked + span:before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        left: 5px;
+        top: 5px;
+        background: #00cb94;
+      }
+    }
+    label {
+      input[type="checkbox"] {
+        width: auto;
+        display: none;
+      }
+      input[type="checkbox"]:checked + span.check:before {
+        content: "";
+        width: 9px;
+        height: 5px;
+        position: absolute;
+        top: 4px;
+        left: 5px;
+        border: 2px solid #00cb94;
+        border-top: none;
+        border-right: none;
+        background: transparent;
+        transform: rotate(-45deg);
+      }
+      span {
+        position: absolute;
+        left: 0;
+        background: #fff;
+        width: 18px;
+        height: 18px;
+        border: solid 1px #e8ebe9;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 8px;
+        color: #00cb94;
+        &.check {
+          border-radius: 0;
+          position: relative;
+        }
+      }
+    }
+  }
+  .rowInputs {
+    display: flex;
+    margin-bottom: 16px;
+    clear: both;
+    overflow: hidden;
+    .hide {
+      display: none !important;
+    }
+    div {
+      width: 45%;
+      margin-right: 5%;
+      input {
+        border-radius: 3px;
+        border: solid 1px #e8ebe9;
+        padding: 13px 12px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #989e9b;
+        margin-right: 5%;
+        width: 100%;
+        margin-bottom: 0;
+        -moz-appearance: textfield;
+        &:not(:first-child) {
+          margin-right: 0;
+        }
+        &::placeholder {
+          font-family: Raleway;
+          font-size: 12px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: #989e9b;
+        }
+      }
+    }
+  }
+  .versichernInputs {
+    display: flex;
+    margin-top: 40px;
+    clear: both;
+    overflow: hidden;
+  }
+  input[name="birthday"],
+  input[name="birthdayMonth"],
+  input[name="birthdayYear"] {
+    width: 15%;
+    margin-right: 1rem;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.versichernGeburtstagInputs {
+  margin-top: 25px;
+  margin-bottom: 16px;
+  .versichernGeburtstagSelect {
+    display: flex;
+    .select {
+      width: 15%;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+    #birthdayMounth {
+      width: 20%;
+    }
+    .Select-placeholder {
+      font-size: 12px;
+      top: 6px;
+      color: #989e9b;
+    }
+    .Select-arrow-zone {
+      display: none;
+    }
+  }
+
+  input {
+    border-radius: 3px;
+    border: solid 1px #e8ebe9;
+    padding: 13px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #989e9b;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 0;
+    &::placeholder {
+      font-family: Raleway;
+      font-size: 12px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #989e9b;
+    }
+  }
+}
+
+.versichernGeburtstag {
+  font-family: Raleway;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b8d4cb;
+  margin-bottom: 0;
+  padding-bottom: 1.2rem;
+}
+
+.versichernMiniForm {
+  display: flex;
+  width: 45%;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  &:not(:last-child) {
+    margin-right: 5%;
+  }
+  label {
+    display: flex;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 0;
+    width: 100%;
+    cursor: pointer;
+    span {
+      position: absolute;
+      left: 0;
+      background: #f7faf9;
+      width: 18px;
+      height: 18px;
+      border: solid 1px #e3e6e5;
+      display: inline-block;
+      border-radius: 3px;
+      margin-right: 8px;
+      color: #ffffff;
+      &.check {
+        border-radius: 2px;
+        position: relative;
+        display: flex;
+        align-self: center;
+        margin: 0 1rem;
+      }
+    }
+    input[name="agree"] {
+      width: auto;
+      display: none;
+    }
+    input[name="agree"]:checked + #insuranceProductId1 {
+      background: #00c27e;
+    }
+    input[name="agree"]:checked + span.check {
+      background: #00c27e;
+    }
+    input[name="agree"]:checked + span.check:before {
+      content: "";
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 5px;
+      border: 2px solid #ffffff;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      transform: rotate(-45deg);
+    }
+
+    input[name="insuranceShortCode"] {
+      width: auto;
+      display: none;
+    }
+    input[name="insuranceShortCode"]:checked + #insuranceProductId1 {
+      background: #00c27e;
+    }
+    input[name="insuranceShortCode"]:checked + span.check {
+      background: #00c27e;
+    }
+    input[name="insuranceShortCode"]:checked + span.check:before {
+      content: "";
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 5px;
+      border: 2px solid #ffffff;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      transform: rotate(-45deg);
+    }
+  }
+  .versichernMiniFormTitle {
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.3rem;
+  }
+  .versichernMiniFormText {
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #989e9b;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+  .tooltip1 {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    width: 162px;
+    height: 65px;
+    left: 16%;
+    bottom: 36%;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 27px 49px 0 rgba(0, 0, 0, 0.11);
+    transition: all 0.3s linear;
+    @media (max-width: 479px) {
+      left: 20%;
+      bottom: 27%;
+    }
+    &::after {
+      position: absolute;
+      bottom: -7px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      border-top: 7px solid #fff;
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+    }
+  }
+  &:hover .tooltip1 {
+    display: flex;
+    align-items: center;
+  }
+  .tooltip2 {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    width: 162px;
+    height: 65px;
+    left: 75%;
+    bottom: 36%;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 27px 49px 0 rgba(0, 0, 0, 0.11);
+    transition: all 0.3s linear;
+    @media (max-width: 479px) {
+      left: 50%;
+      bottom: 21%;
+    }
+    &::after {
+      position: absolute;
+      bottom: -7px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      border-top: 7px solid #fff;
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+    }
+  }
+  &:hover .tooltip2 {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.versichernAgree {
+  display: flex;
+  margin-top: 70px;
+  label {
+    display: flex;
+    align-self: flex-start;
+    font-weight: 500;
+    position: relative;
+    padding-right: 1.3rem;
+    span {
+      position: absolute;
+      left: 0;
+      background: #f7faf9;
+      width: 18px;
+      height: 18px;
+      border: solid 1px #e3e6e5;
+      display: inline-block;
+      border-radius: 2px;
+      margin-right: 1.5rem;
+      color: #ffffff;
+      &.check {
+        flex-shrink: 0;
+        border-radius: 2px;
+        position: relative;
+        display: flex;
+        align-self: flex-start;
+      }
+    }
+    input[name="agree"] {
+      width: auto;
+      display: none;
+    }
+    input[name="agree"]:checked + span.check {
+      background: #00c27e;
+    }
+    input[name="agree"]:checked + span.check:before {
+      content: "";
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 5px;
+      border: 2px solid #ffffff;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+  }
+  .versichernAgreeText {
+    width: 70%;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #989e9b;
+  }
+  .errorText {
+    color: red;
+    width: 70%;
+  }
+}
+
+.versichernSelect {
+  display: flex;
+  div {
+    width: 100%;
+  }
+  .select {
+    width: 45%;
+    &:not(:last-child) {
+      margin-right: 5%;
+    }
+  }
+  .selectCountry {
+    width: 95%;
+    margin-bottom: 1rem;
+    .Select-arrow-zone {
+      width: 13%;
+    }
+  }
+  .Select-placeholder {
+    top: 4px;
+    font-size: 12px;
+  }
+  .Select-arrow-zone {
+    width: 20%;
+    border-left: 1px solid #e8ebe9;
+  }
+}
+
+.versichernBtn {
+  margin-top: 50px;
+  background: #02ca95;
+  color: #fff;
+  padding: 19px 68px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  border: none;
+  display: inline-block;
+  outline: none !important;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.04),
+    0 4px 8px 0 rgba(3, 201, 108, 0.12);
+  &:hover {
+    color: #fff;
+    background-color: #01ba89;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.04),
+      0 4px 8px 0 rgba(3, 201, 108, 0.12);
+  }
+}
+
+.tooltip2 {
+  background: #ffffff;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000000;
+  padding: 6px;
+  border-radius: 3px;
+  position: absolute;
+  margin-left: -100px;
+  width: 162px;
+  height: 65px;
+  left: 80%;
+  bottom: 36%;
+}
+
+.versichernMainContainer {
+  position: relative;
+
+  .fake-header.header-mobile,
+  .header-mobile.scrolling-header,
+  footer {
+    display: none;
+    background: #fff;
+
+    @media all and (max-width: 479px) {
+      display: block;
+    }
+  }
+}
+
+.successfullyText {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #02ca95;
+}
+
+.detailInformationtext {
+  color: #989e9b;
+  text-align: center;
+  .detailInformationLink {
+    color: #23224d;
+  }
+}
+
+// ------- Meadia ------- //
+.versichernMainContainer {
+  .header-mobile {
+    .basketButtons {
+      @media (max-width: 479px) {
+        display: none;
+      }
+    }
+  }
+}
+.versichernPage {
+  @media (max-width: 479px) {
+    padding-top: 42px;
+  }
+}
+.versichernPageMarkup {
+  @media (max-width: 479px) {
+    flex-direction: column;
+  }
+}
+
+.versichernMainText {
+  @media (max-width: 479px) {
+    text-align: center;
+    &::after {
+      left: 44%;
+      top: 26%;
+    }
+  }
+}
+.versichernMainText {
+  @media (max-width: 768px) {
+    font-size: 29px;
+  }
+}
+
+.versichernForm .rowInputs {
+  @media (max-width: 479px) {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0;
+    div {
+      width: 95%;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.versichernTitle {
+  @media (max-width: 479px) {
+    margin-bottom: 0;
+    &:nth-child(4) {
+      padding-top: 1rem;
+    }
+  }
+}
+
+.versichernTitleItem {
+  .versichernItemText {
+    @media (max-width: 479px) {
+      padding-top: 17px;
+    }
+  }
+}
+
+.versichernSelect {
+  @media (max-width: 479px) {
+    flex-direction: column;
+    width: 100%;
+  }
+  .select {
+    @media (max-width: 479px) {
+      width: 95%;
+      margin-bottom: 1rem;
+      .Select-arrow-zone {
+        width: 14%;
+      }
+    }
+  }
+}
+
+.versichernGeburtstagInputs {
+  @media (max-width: 479px) {
+    margin-top: 0;
+  }
+  .versichernGeburtstagSelect {
+    @media (max-width: 479px) {
+      width: 95%;
+      .select,
+      #birthdayMounth {
+        width: 31%;
+      }
+    }
+  }
+}
+
+.versichernForm {
+  .versichernInputs {
+    @media (max-width: 479px) {
+      flex-direction: column;
+      margin-top: 32px;
+      .versichernMiniForm {
+        width: 95%;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+        label {
+          span {
+            &.check {
+              margin: 0 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.versichernAgree {
+  @media (max-width: 479px) {
+    margin-top: 1rem;
+    label {
+      padding-right: 0;
+      span {
+        margin-right: 1.5rem;
+      }
+    }
+    .versichernAgreeText {
+      width: 75%;
+    }
+  }
+}
+
+.versichernBtn {
+  @media (max-width: 479px) {
+    width: 95%;
+    margin-top: 14px;
+  }
+}
+
+.mobileToolTip-1 {
+  @media (max-width: 479px) {
+    content: attr(data-text);
+    box-sizing: border-box;
+    background: #ffffff;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000000;
+    padding: 6px;
+    border-radius: 3px;
+    position: absolute;
+    margin-left: -100px;
+    width: 162px;
+    height: 65px;
+    top: 67%;
+    left: 48%;
+    transition: 0.25s ease-in-out;
+  }
+  @media (max-width: 768px) {
+    content: attr(data-text);
+    box-sizing: border-box;
+    background: #ffffff;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000000;
+    padding: 6px;
+    border-radius: 3px;
+    position: absolute;
+    margin-left: -100px;
+    width: 162px;
+    height: 65px;
+    top: 67%;
+    left: 48%;
+    transition: 0.25s ease-in-out;
+  }
+}
+
+.arrow-down-1 {
+  @media (max-width: 479px) {
+    position: absolute;
+    left: 40%;
+    margin-left: -8px;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ffffff;
+    transition: 0.25s ease-in-out;
+  }
+  @media (max-width: 768px) {
+    position: absolute;
+    left: 40%;
+    margin-left: -8px;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ffffff;
+    transition: 0.25s ease-in-out;
+  }
+}
+
+.mobileToolTip-2 {
+  @media (max-width: 479px) {
+    content: attr(data-text);
+    box-sizing: border-box;
+    background: #ffffff;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000000;
+    padding: 6px;
+    border-radius: 3px;
+    position: absolute;
+    margin-left: -100px;
+    width: 162px;
+    height: 65px;
+    top: 72%;
+    left: 48%;
+    transition: 0.25s ease-in-out;
+  }
+  @media (max-width: 768px) {
+    content: attr(data-text);
+    box-sizing: border-box;
+    background: #ffffff;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000000;
+    padding: 6px;
+    border-radius: 3px;
+    position: absolute;
+    margin-left: -100px;
+    width: 162px;
+    height: 65px;
+    top: 72%;
+    left: 48%;
+    transition: 0.25s ease-in-out;
+  }
+}
+
+.arrow-down-2 {
+  @media (max-width: 479px) {
+    position: absolute;
+    left: 40%;
+    margin-left: -8px;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ffffff;
+    transition: 0.25s ease-in-out;
+  }
+  @media (max-width: 768px) {
+    position: absolute;
+    left: 40%;
+    margin-left: -8px;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ffffff;
+    transition: 0.25s ease-in-out;
+  }
+}
+
+.hideForm {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, 0.9s ease-in-out;
+  .versichernForm {
+    @media (max-width: 479px) {
+      height: 0;
+      visibility: hidden;
+      transition: visibility 0s, height 0s, 0.9s ease-in-out;
+    }
+  }
+}

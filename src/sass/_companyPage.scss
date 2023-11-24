@@ -1,0 +1,71 @@
+.sponsorsRow{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.companyForm{
+  table{
+    border: none;
+    td{
+      border: none;
+      vertical-align: middle;
+      .error{
+        margin-left: 5%;
+      }
+    }
+    tr:hover td {
+      background: none;
+      color: #000;
+      border: none;
+    }
+  }
+  input:not([type='radio']){
+    width: 100%;
+  }
+  input[type='radio']{
+    margin-right: 15px;
+  }
+  label{
+    width: 33%;
+  }
+  select{
+    width: 100%;
+    height: 30px;
+  }
+  input[name='phoneNumber']{
+    width: 96%;
+    margin: 0 0 0 5%;
+  }
+  .error{
+    color: #ff0000;
+  }
+  input.companyForm-submitBtn{
+    cursor: pointer;
+    color: #FFF;
+    padding: 10px 20px;
+    background: #008acb;
+    font-size: 14px;
+    border-radius: 7px;
+    border: 0 none;
+    &:hover{
+      background: #000;
+      color: #FFF;
+    }
+  }
+}
+.ihreVorteile li{
+  background: url('/images/tick-black.png') no-repeat 11px 0;
+  background-size: 22px 22px;
+  padding: 8px 0 8px 35px;
+  margin: 0;
+  color: #000;
+}
+.companyPage .successMsg{
+  text-align: center;
+  color: #00b41c;
+  font-size: 18px;
+}

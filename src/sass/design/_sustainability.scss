@@ -1,0 +1,104 @@
+.sustainability {
+    background-color: #f8faf9;
+    font-family: "Raleway";
+    font-weight: 600;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.sustainability-preheader {
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: #bdd3cb;
+
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.sustainability-header {
+    color: #23224a;
+    font-weight: 600;
+
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.sustainability-underline {
+    display: block;
+    width: 29px;
+    height: 2px;
+    background-color: #5bc799;
+
+    margin-top: 10px;
+}
+
+.sustainability-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.sustainability-card {
+    background-color: #ffffff;
+    text-align: center;
+
+    padding: 27px 0;
+    width: calc(50% - 4px);
+}
+
+.sustainability-card-title {
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .sustainability {
+        padding: 110px calc(5% + 30px);
+    }
+
+    .sustainability-preheader {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .sustainability-header {
+        margin-top: 16px;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .sustainability-underline {
+        margin-top: 14px;
+    }
+
+    .sustainability-cards {
+        margin-top: 44px;
+        gap: 16px;
+        & > * {
+            flex: 1;
+        }
+    }
+
+    .sustainability-card {
+        padding: 48px 0;
+    }
+
+    .sustainability-card-title {
+        margin-top: 24px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .sustainability {
+        margin-bottom: 0;
+    }
+}

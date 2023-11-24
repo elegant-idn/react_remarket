@@ -1,0 +1,44 @@
+.deviceInnerPage-inner{
+  min-width: 200px;
+  max-width: 1150px;
+  clear: both;
+  overflow: hidden;
+  padding: 20px 15px 0 15px;
+  margin: 0 auto;
+  .asideFilter label {
+    margin-left: 5px;
+  }
+}
+.priceFilter {
+  position: relative;
+  padding-bottom: 25px;
+  input[type=range]{
+    cursor: pointer;
+    &:hover {
+      border: none;
+    }
+  }
+  span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  span:last-child {
+    @extend span;
+    right: 0;
+    left: inherit;
+  }
+}
+select:hover{
+  border: 1px solid #ccc;
+  color: inherit;
+}
+label{
+  margin-left: 5px;
+}
+#progress{
+  z-index: 9000;position: fixed;top: 0;left: 0;width: 0;height: 5px;
+}
+input[type=checkbox][disabled]+label{
+  color: darkgray;
+}

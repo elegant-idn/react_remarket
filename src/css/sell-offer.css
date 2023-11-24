@@ -1,0 +1,420 @@
+#customer_companyname_outer {display:none;}
+
+.switch-field {
+  width: 100%;
+  padding: 0 0 15px 0;
+  overflow: hidden;
+}
+
+.switch-title {
+  float:left; width:270px;}
+
+.switch-field input[type="radio"] {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.switch-field label {
+  float: left;
+}
+
+.switch-field label {
+  display: inline-block;
+  width: 170px;
+  background-color: #FFF;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: none;
+  padding: 4px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition:    all 0.1s ease-in-out;
+  -ms-transition:     all 0.1s ease-in-out;
+  -o-transition:      all 0.1s ease-in-out;
+  transition:         all 0.1s ease-in-out;
+  border-radius: 0px;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  color:#FFF;
+  background-color: #3dad5e;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
+
+
+
+
+#model-options-left
+{
+-webkit-perspective: 1000;
+-moz-perspective: 1000;
+-ms-perspective: 1000;
+perspective: 1000;
+-ms-transform: perspective(1000px);
+-moz-transform: perspective(1000px);
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+}
+
+
+#model-options-left.flipped #model-options-left-back
+{
+-webkit-transform: rotateY(0deg);
+-moz-transform: rotateY(0deg);
+-o-transform: rotateY(0deg);
+-ms-transform: rotateY(0deg);
+transform: rotateY(0deg);
+}
+
+#model-options-left.flipped #model-options-left-front
+{
+-webkit-transform: rotateY(180deg);
+-moz-transform: rotateY(180deg);
+-o-transform: rotateY(180deg);
+transform: rotateY(180deg);
+}
+
+#model-options-left-front,
+#model-options-left-back
+{
+position: absolute;
+
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transition: 0.6s;
+-webkit-transform-style: flat;
+-webkit-transform: rotateY(0deg);
+-moz-transition: 0.6s;
+-moz-transform-style: preserve-3d;
+-moz-transform: rotateY(0deg);
+-o-transition: 0.6s;
+-o-transform-style: preserve-3d;
+-o-transform: rotateY(0deg);
+-ms-transition: 0.6s;
+-ms-transform-style: preserve-3d;
+-ms-transform: rotateY(0deg);
+transition: 0.6s;
+transform-style: preserve-3d;
+transform: rotateY(0deg);
+}
+
+#model-options-left-front
+{
+z-index: 20;
+
+-webkit-transform: rotateY(0deg);
+-ms-transform: rotateY(0deg);
+}
+
+#model-options-left-back
+{
+z-index: 10;
+/* display: none; */
+-webkit-transform: rotateY(-180deg);
+-moz-transform: rotateY(-180deg);
+-o-transform: rotateY(-180deg);
+-ms-transform: rotateY(-180deg);
+transform: rotateY(-180deg);
+}
+
+
+#model-options-left {float:left; width:270px; }
+#model-options-left .device {width:270px; height:470px; background-position: 20px 20px; background-repeat: no-repeat; }
+#model-options-left-outer {width:270px; height:470px;}
+
+#repair-info, .box-info {box-sizing: border-box;width: 100%;border:1px solid #000;padding:12px;margin:0 0 15px 0;border-radius: 7px;font-size: 14px; }
+#repair-sell {box-sizing: border-box;width: 100%;border:2px solid #2cab2c;padding:12px;margin:0 0 15px 0;border-radius: 7px;font-size: 14px; }
+
+#repair-regular {box-sizing: border-box;width: 100%;border:2px solid #008acb;padding:12px 12px 15px 12px;margin:0 0 15px 0;border-radius: 7px;font-size: 14px; }
+#repair-price, .box-successful {box-sizing: border-box;width: 100%;border:2px solid #008acb;padding:12px 12px 15px 12px;margin:0 0 15px 0;border-radius: 7px; }
+#repair-regular .left, .box-successful .left {float:left; color:#008acb; font-size: 16px;width:70%;line-height: 1.1;padding:0;}
+#repair-regular .left span, #repair-replacement .left span, #repair-buyinshop .left span {font-weight:bold; text-decoration: underline;font-size: 18px;}
+#repair-regular .right, .box-successful .right {float:right; color:#000; font-size: 24px; font-weight: bold; width: 30%;text-align: right;}
+#repair-price .sell, .box-successful .sell {clear:both; color:#000;padding:15px 0 0 0;}
+#repair-regular-notice {font-size:12px;border-top:1px solid #CCC; margin:15px 0 0 0;padding:15px 0 0 0;}
+
+#repair-notice {clear:both;box-sizing: border-box;width: 100%;border:1px solid #ffca37;padding:15px;margin:15px 0 15px 0;border-radius: 7px; }
+#repair-notice ul {list-style-type:disc;padding:0 0 0 20px;}
+#repair-notice li {padding:0 0 10px 10px;}
+#repair-notice li:last {border-bottom:0px none;}
+
+#repair-replacement, #repair-buyinshop, .holidays-box {box-sizing: border-box;width: 100%;border:2px dashed #000;padding:12px 12px 15px 12px;margin:0 0 15px 0;border-radius: 7px; }
+
+#repair-replacement .left, #repair-sell .left, #repair-buyinshop .left {float:left; color:#000; font-size: 12px;width:70%;line-height: 1.1;padding:0;}
+#repair-replacement .right, #repair-sell .right, #repair-buyinshop .right {float:right;width:30%;text-align: right;}
+#repair-replacement h2, #repair-buyinshop h2 {margin:0;padding:0 0 15px 0;;}
+#repair-replacement .left p, #repair-sell .left p, #repair-buyinshop .left p, #repair-replacement .right p, #repair-buyinshop .right p {margin:0;padding:0;}
+
+#repair-regular .button-blue, #repair-sell .button-green, #repair-buyinshop .button-black, #repair-replacement .button-black {width:160px;font-size:13px;text-decoration:none;}
+
+#repair-price #repair-sum-price, #repair-price #repair-sum-time {font-weight: bold;text-decoration: underline;}
+
+#model-options-left .iphone-4-iphone-4s {background-image: url(//[domain-cdn]/images/model-outline/iphone4-front.png); background-size:220px 414px; }
+#model-options-left .iphone-4-iphone-4s-back {background-image: url(//[domain-cdn]/images/model-outline/iphone4-back.png); background-size:220px 414px; }
+#model-options-left .iphone-5c {background-image: url(//[domain-cdn]/images/model-outline/iphone5-front.png); background-size:212px 443px; }
+#model-options-left .iphone-5c-back {background-image: url(//[domain-cdn]/images/model-outline/iphone5-back.png); background-size:212px 443px; }
+#model-options-left .iphone-5 {background-image: url(//[domain-cdn]/images/model-outline/iphone5-front.png); background-size:212px 443px; }
+#model-options-left .iphone-5-back {background-image: url(//[domain-cdn]/images/model-outline/iphone5-back.png); background-size:212px 443px; }
+#model-options-left .iphone-se {background-image: url(//[domain-cdn]/images/model-outline/iphonese-front.png); background-size:212px 443px; }
+#model-options-left .iphone-se-back {background-image: url(//[domain-cdn]/images/model-outline/iphonese-back.png); background-size:212px 443px; }
+#model-options-left .iphone-5s {background-image: url(//[domain-cdn]/images/model-outline/iphone5s-front.png); background-size:212px 443px; }
+#model-options-left .iphone-5s-back {background-image: url(//[domain-cdn]/images/model-outline/iphone5s-back.png); background-size:212px 443px; }
+#model-options-left .iphone-6s-plus {background-image: url(//[domain-cdn]/images/model-outline/iphone6-front.png); background-size:219px 442px; }
+#model-options-left .iphone-6s-plus-back {background-image: url(//[domain-cdn]/images/model-outline/iphone6-back.png); background-size:212px 442px; }
+#model-options-left .iphone-6-plus {background-image: url(//[domain-cdn]/images/model-outline/iphone6-front.png); background-size:219px 442px; }
+#model-options-left .iphone-6-plus-back {background-image: url(//[domain-cdn]/images/model-outline/iphone6-back.png); background-size:212px 442px; }
+#model-options-left .iphone-6s {background-image: url(//[domain-cdn]/images/model-outline/iphone6-front.png); background-size:219px 442px; }
+#model-options-left .iphone-6s-back {background-image: url(//[domain-cdn]/images/model-outline/iphone6-back.png); background-size:212px 442px; }
+#model-options-left .iphone-6 {background-image: url(//[domain-cdn]/images/model-outline/iphone6-front.png); background-size:219px 442px; }
+#model-options-left .iphone-6-back {background-image: url(//[domain-cdn]/images/model-outline/iphone6-back.png); background-size:212px 442px; }
+#model-options-left .galaxy-s7-edge-back {background-image: url(//[domain-cdn]/images/model-outline/galaxys7-edge-back.png); background-size:220px 442px; }
+#model-options-left .galaxy-s7-edge {background-image: url(//[domain-cdn]/images/model-outline/galaxys7-edge-front.png); background-size:220px 442px; }
+#model-options-left .galaxy-s7-back {background-image: url(//[domain-cdn]/images/model-outline/galaxys7-back.png); background-size:220px 434px; }
+#model-options-left .galaxy-s7 {background-image: url(//[domain-cdn]/images/model-outline/galaxys7-front.png); background-size:220px 434px; }
+#model-options-left .galaxy-s6-edge-plus-back {background-image: url(//[domain-cdn]/images/model-outline/galaxys6-edge-plus-back.png); background-size:220px 442px; }
+#model-options-left .galaxy-s6-edge-plus {background-image: url(//[domain-cdn]/images/model-outline/galaxys6-edge-plus-front.png); background-size:220px 442px; }
+#model-options-left .galaxy-s6-edge-back {background-image: url(//[domain-cdn]/images/model-outline/galaxys6-edge-back.png); background-size:220px 442px; }
+#model-options-left .galaxy-s6-edge {background-image: url(//[domain-cdn]/images/model-outline/galaxys6-edge-front.png); background-size:220px 442px; }
+#model-options-left .galaxy-s6-back {background-image: url(//[domain-cdn]/images/model-outline/galaxys6-back.png); background-size:220px 434px; }
+#model-options-left .galaxy-s6 {background-image: url(//[domain-cdn]/images/model-outline/galaxys6-front.png); background-size:220px 434px; }
+#model-options-left .galaxy-s5-mini {background-image: url(//[domain-cdn]/images/model-outline/galaxys5-mini-front.png); background-size:220px 433px; }
+#model-options-left .galaxy-s5-mini-back {background-image: url(//[domain-cdn]/images/model-outline/galaxys5-mini-back.png); background-size:220px 433px; }
+#model-options-left .galaxy-s5 {background-image: url(//[domain-cdn]/images/model-outline/galaxys5-front.png); background-size:220px 421px; }
+#model-options-left .galaxy-s5-back {background-image: url(//[domain-cdn]/images/model-outline/galaxys5-back.png); background-size:220px 421px; }
+#model-options-left .galaxy-s4-mini {background-image: url(//[domain-cdn]/images/model-outline/galaxys4-mini-front.png); background-size:220px 437px; }
+#model-options-left .galaxy-s4-mini-back {background-image: url(//[domain-cdn]/images/model-outline/galaxys4-mini-back.png); background-size:220px 437px; }
+#model-options-left .galaxy-s4 {background-image: url(//[domain-cdn]/images/model-outline/galaxys4-front.png); background-size:220px 421px; }
+#model-options-left .galaxy-s4-back {background-image: url(//[domain-cdn]/images/model-outline/galaxys4-back.png); background-size:220px 421px; }
+#model-options-left .galaxy-s3 {background-image: url(//[domain-cdn]/images/model-outline/galaxys3-front.png); background-size:220px 415px; }
+#model-options-left .galaxy-s3-back {background-image: url(//[domain-cdn]/images/model-outline/galaxys3-back.png); background-size:220px 415px; }
+#model-options-left .galaxy-s2 {background-image: url(//[domain-cdn]/images/model-outline/galaxys2-front.png); background-size:220px 406px; }
+#model-options-left .galaxy-s2-back {background-image: url(//[domain-cdn]/images/model-outline/galaxys2-back.png); background-size:220px 406px; }
+#model-options-left .galaxy-note-2 {background-image: url(//[domain-cdn]/images/model-outline/galaxynote2-front.png); background-size:220px 404px; }
+#model-options-left .galaxy-note-2-back {background-image: url(//[domain-cdn]/images/model-outline/galaxynote2-back.png); background-size:220px 404px; }
+#model-options-left .galaxy-note-3 {background-image: url(//[domain-cdn]/images/model-outline/galaxynote3-front.png); background-size:220px 417px; }
+#model-options-left .galaxy-note-3-back {background-image: url(//[domain-cdn]/images/model-outline/galaxynote3-back.png); background-size:220px 417px; }
+#model-options-left .galaxy-note-4 {background-image: url(//[domain-cdn]/images/model-outline/galaxynote4-front.png); background-size:220px 423px; }
+#model-options-left .galaxy-note-4-back {background-image: url(//[domain-cdn]/images/model-outline/galaxynote4-back.png); background-size:220px 423px; }
+#model-options-left .ipad-pro-12-9-1-generation {background-image: url(//[domain-cdn]/images/model-outline/ipad-front.png); background-size:220px 311px; }
+#model-options-left .ipad-pro-12-9-1-generation-back {background-image: url(//[domain-cdn]/images/model-outline/ipad-back.png); background-size:220px 311px; }
+#model-options-left .ipad-pro-9-7-1-generation {background-image: url(//[domain-cdn]/images/model-outline/ipad-front.png); background-size:220px 311px; }
+#model-options-left .ipad-pro-9-7-1-generation-back {background-image: url(//[domain-cdn]/images/model-outline/ipad-back.png); background-size:220px 311px; }
+#model-options-left .ipad-4-generation {background-image: url(//[domain-cdn]/images/model-outline/ipad-front.png); background-size:220px 311px; }
+#model-options-left .ipad-4-generation-back {background-image: url(//[domain-cdn]/images/model-outline/ipad-back.png); background-size:220px 311px; }
+#model-options-left .ipad-3-generation {background-image: url(//[domain-cdn]/images/model-outline/ipad-front.png); background-size:220px 311px; }
+#model-options-left .ipad-3-generation-back {background-image: url(//[domain-cdn]/images/model-outline/ipad-back.png); background-size:220px 311px; }
+#model-options-left .ipad-2-generation {background-image: url(//[domain-cdn]/images/model-outline/ipad-front.png); background-size:220px 311px; }
+#model-options-left .ipad-2-generation-back {background-image: url(//[domain-cdn]/images/model-outline/ipad-back.png); background-size:220px 311px; }
+#model-options-left .ipad-air-1-generation {background-image: url(//[domain-cdn]/images/model-outline/ipad-front.png); background-size:220px 311px; }
+#model-options-left .ipad-air-1-generation-back {background-image: url(//[domain-cdn]/images/model-outline/ipad-back.png); background-size:220px 311px; }
+#model-options-left .ipad-air-2-generation {background-image: url(//[domain-cdn]/images/model-outline/ipad-front.png); background-size:220px 311px; }
+#model-options-left .ipad-air-2-generation-back {background-image: url(//[domain-cdn]/images/model-outline/ipad-back.png); background-size:220px 311px; }
+#model-options-left .ipad-mini-4-generation {background-image: url(//[domain-cdn]/images/model-outline/ipad-front.png); background-size:220px 311px; }
+#model-options-left .ipad-mini-4-generation-back {background-image: url(//[domain-cdn]/images/model-outline/ipad-back.png); background-size:220px 311px; }
+#model-options-left .ipad-mini-3-generation {background-image: url(//[domain-cdn]/images/model-outline/ipad-front.png); background-size:220px 311px; }
+#model-options-left .ipad-mini-3-generation-back {background-image: url(//[domain-cdn]/images/model-outline/ipad-back.png); background-size:220px 311px; }
+#model-options-left .ipad-mini-2-generation {background-image: url(//[domain-cdn]/images/model-outline/ipad-front.png); background-size:220px 311px; }
+#model-options-left .ipad-mini-2-generation-back {background-image: url(//[domain-cdn]/images/model-outline/ipad-back.png); background-size:220px 311px; }
+#model-options-left .ipad-mini-1-generation {background-image: url(//[domain-cdn]/images/model-outline/ipad-front.png); background-size:220px 311px; }
+#model-options-left .ipad-mini-1-generation-back {background-image: url(//[domain-cdn]/images/model-outline/ipad-back.png); background-size:220px 311px; }
+#model-options-left .ipod-4g {background-image: url(//[domain-cdn]/images/model-outline/ipod-touch-4g-front.png); background-size:216px 407px; }
+#model-options-left .ipod-4g-back {background-image: url(//[domain-cdn]/images/model-outline/ipod-touch-4g-back.png); background-size:216px 407px; }
+#model-options-left .ipod-5g-ipod-6g {background-image: url(//[domain-cdn]/images/model-outline/ipod-touch-5g-front.png); background-size:220px 446px; }
+#model-options-left .ipod-5g-ipod-6g-back {background-image: url(//[domain-cdn]/images/model-outline/ipod-touch-5g-back.png); background-size:220px 446px; }
+
+
+.repair-dot {z-index:999;position: absolute; width: 15px; height: 15px; cursor: pointer; display:block; border: 2px solid #888; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px;transition: all 0.2s ease-in-out; box-shadow: none;}
+.repair-dot:hover {border:2px solid transparent; box-shadow: 0 0 0 3px #008ACB;}
+.repair-dot-active { border-color: #008acb;}
+
+.repair-dot-animation {
+  -webkit-animation: pulse 2s 0s ease-out;
+  -moz-animation: pulse 2s 0s ease-out;
+  animation: pulse 2s 0s ease-out; }
+
+#model-options-right {float:left; width:690px; margin:0 0 0 0; }
+
+.repair-options {box-sizing: border-box; margin: 0 0 0 0; }
+
+.model-options #model-options-right .repair {
+  box-sizing: border-box;
+    float:left;
+    display:block;
+    width: calc(50% - 5px);
+    border:1px solid #CCC;
+    margin:0 10px 10px 0;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.model-options #model-options-right .repair:nth-child(even) {margin:0 0 10px 0; }
+
+.model-options #model-options-right .repair:hover {border:1px solid transparent; box-shadow: 0 0 0 5px #008ACB;}
+.model-options #model-options-right .repair.active {border:1px solid #000;}
+.model-options #model-options-right .repair.active:hover {border:1px solid transparent;}
+
+.model-options #model-options-right .repair.active .description {color:#000;font-weight: bold;}
+.model-options #model-options-right .repair.active .price {color:#000;font-weight: bold;}
+
+.model-options #model-options-right .repair .checkbox { padding:12px 0 0 0; height:28px;vertical-align: middle; font-size: 0; display:inline-block; width:10%; min-width: 10px; text-align: center; }
+.model-options #model-options-right .repair .icon {height:32px;font-size: 0; display:inline-block; width:8%; min-width: 32px; height: 32px; vertical-align: middle; background-repeat: no-repeat; background-position: left top; background-size:32px 32px;  }
+.model-options #model-options-right .repair .description {font-size: 12px; display:inline-block; width:44%; vertical-align: middle;}
+.model-options #model-options-right .repair .price {vertical-align: middle; font-size: 16px; font-weight: 200; display:inline-block; width:28%; text-align: right; }
+
+.model-options #model-options-right .repair .icon-glass {background-image: url(//[domain-cdn]/images/repair-icons/glass.png);}
+.model-options #model-options-right .repair .icon-battery {background-image: url(//[domain-cdn]/images/repair-icons/battery.png);}
+.model-options #model-options-right .repair .icon-touchscreen {background-image: url(//[domain-cdn]/images/repair-icons/touchscreen.png);}
+.model-options #model-options-right .repair .icon-color {background-image: url(//[domain-cdn]/images/repair-icons/color.png);}
+.model-options #model-options-right .repair .icon-homebutton {background-image: url(//[domain-cdn]/images/repair-icons/homebutton.png);}
+.model-options #model-options-right .repair .icon-backcover {background-image: url(//[domain-cdn]/images/repair-icons/backcover.png);}
+.model-options #model-options-right .repair .icon-power {background-image: url(//[domain-cdn]/images/repair-icons/power.png);}
+.model-options #model-options-right .repair .icon-mute {background-image: url(//[domain-cdn]/images/repair-icons/mute.png);}
+.model-options #model-options-right .repair .icon-volume {background-image: url(//[domain-cdn]/images/repair-icons/volume.png);}
+.model-options #model-options-right .repair .icon-vibra {background-image: url(//[domain-cdn]/images/repair-icons/vibra.png);}
+.model-options #model-options-right .repair .icon-backup {background-image: url(//[domain-cdn]/images/repair-icons/backup.png);}
+.model-options #model-options-right .repair .icon-restore {background-image: url(//[domain-cdn]/images/repair-icons/restore.png);}
+.model-options #model-options-right .repair .icon-replacement {background-image: url(//[domain-cdn]/images/repair-icons/replacement.png);}
+.model-options #model-options-right .repair .icon-charging {background-image: url(//[domain-cdn]/images/repair-icons/charging.png);}
+.model-options #model-options-right .repair .icon-earspeaker {background-image: url(//[domain-cdn]/images/repair-icons/earspeaker.png);}
+.model-options #model-options-right .repair .icon-loudspeaker {background-image: url(//[domain-cdn]/images/repair-icons/loudspeaker.png);}
+.model-options #model-options-right .repair .icon-audiojack {background-image: url(//[domain-cdn]/images/repair-icons/audiojack.png);}
+.model-options #model-options-right .repair .icon-microphone {background-image: url(//[domain-cdn]/images/repair-icons/microphone.png);}
+.model-options #model-options-right .repair .icon-camera {background-image: url(//[domain-cdn]/images/repair-icons/camera.png);}
+.model-options #model-options-right .repair .icon-sim {background-image: url(//[domain-cdn]/images/repair-icons/sim.png);}
+.model-options #model-options-right .repair .icon-insurance {background-image: url(//[domain-cdn]/images/repair-icons/insurance.png);}
+.model-options #model-options-right .repair .icon-diagnosis {background-image: url(//[domain-cdn]/images/repair-icons/diagnosis.png);}
+.model-options #model-options-right .repair .icon-camera-back-glass {background-image: url(//[domain-cdn]/images/repair-icons/camera-back-glass.png);}
+.model-options #model-options-right .repair .icon-proximity-sensor {background-image: url(//[domain-cdn]/images/repair-icons/proximity-sensor.png);}
+
+
+#model-options-left-toggle img {-webkit-transition: -webkit-transform 1.0s ease;transition: transform 1.0s ease;}
+#model-options-left-toggle:hover img {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+
+
+#box-repair-fulfillment { margin:30px 0;}
+.box-repair-fulfillment-options {transition: all 0.4s ease-in-out;box-shadow: none;text-align: center; display:inline-block;width:226px;box-sizing: border-box;padding: 20px; margin:0 15px 15px 0; border:2px solid #CCC;border-radius: 7px; }
+.box-repair-fulfillment-options h2 {margin:0; padding:0;}
+.box-repair-fulfillment-options img {margin:10px 0; padding:0;}
+.box-repair-fulfillment-options span {font-size:12px;}
+.box-repair-fulfillment-options.active {border-color:#000;}
+.box-repair-fulfillment-options:hover, .box-repair-fulfillment-options.active {box-shadow: 0 0 0 5px #008ACB;border:2px solid transparent;}
+
+.box-repair-fulfillment-options-last {margin-right:0;}
+
+
+
+#box-recommend ul {
+  list-style-type:none;
+  margin:0;
+}
+
+#box-recommend ul li {
+  display: inline;
+  float:left;
+  padding:0;
+   margin:0 60px 15px 0;
+   font-size:11px;
+   color:#FFF;
+   width:48px;
+   height:75px;
+  text-align: center;
+}
+
+#box-recommend ul li img {
+  text-align: center;
+  padding:0 0 5px 0;
+}
+
+#box-recommend ul li span {
+  text-align: center;
+}
+
+#box-recommend a {border:0 none;text-decoration:none;}
+
+
+.tooltip
+{
+position: absolute;
+background: #FFF;
+border: 1px solid #ccc;
+border-radius: 7px;
+margin: 12px 12px;
+padding: 8px;
+z-index:99;
+}
+
+#recommend-text {border:2px solid #000;border-radius: 7px;padding:10px;color:#000;width: 100%;height: 80px;overflow: scoll;margin:0 0 15px 0;}
+
+#tab-visit-datetime-box.error {border: 1px solid #ca0000;}
+
+#tab-visit-captcha-box.error,
+#company-captcha-box.error {border: 1px solid #ca0000;padding:3px 3px 3px 7px;box-sizing: border-box;text-align: center;}
+
+/*##
+##
+## Animationen Definitionen
+##
+####*/
+
+@-webkit-keyframes glow {0% { border-color: #0077e9; box-shadow: 0 0 5px #0077e9, inset 0 0 0px #0077e9, 0 0 0 0; } 100% { border-color: #0077e9; box-shadow: 0 0 15px #0077e9, inset 0 0 5px #0077e9, 0 0 0 0; }}
+@-moz-keyframes    glow {0% { border-color: #000; box-shadow: 0 0 5px #000, inset 0 0 0px #000, 0 0 0 0; } 100% { border-color: #000; box-shadow: 0 0 15px #000, inset 0 0 5px #000, 0 0 0 0; }}
+@keyframes         glow { 0% { border-color: #000; box-shadow: 0 0 5px #000, inset 0 0 0px #000, 0 0 0 0; } 100% { border-color: #000; box-shadow: 0 0 15px #000, inset 0 0 0px #000, 0 0 0 0; }}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 8px 6px rgba(0, 118, 173, 0)), 0 0 0px 0px transparent, 0 0 0px 0px rgba(26, 255, 179, 0);
+  }
+  10% {
+    box-shadow: 0 0 8px 6px #008acb, 0 0 12px 10px transparent, 0 0 12px 14px #008acb;
+  }
+  100% {
+    box-shadow: 0 0 8px 6px rgba(0, 118, 173, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 255, 179, 0);
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    box-shadow: 0 0 8px 6px rgba(0, 118, 173, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(26, 255, 179, 0);
+  }
+  10% {
+    box-shadow: 0 0 8px 6px #008acb, 0 0 12px 10px transparent, 0 0 12px 14px #008acb;
+  }
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 255, 179, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 255, 179, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 8px 6px rgba(26, 255, 179, 0), 0 0 0px 0px transparent, 0 0 0px 0px rgba(26, 255, 179, 0);
+  }
+  10% {
+    box-shadow: 0 0 8px 6px #008acb, 0 0 12px 10px transparent, 0 0 12px 14px #008acb;
+  }
+  100% {
+    box-shadow: 0 0 8px 6px rgba(26, 255, 179, 0), 0 0 0px 40px transparent, 0 0 0px 40px rgba(26, 255, 179, 0);
+  }
+}

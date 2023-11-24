@@ -1,0 +1,148 @@
+@import "../variables";
+footer{
+  font-family: $font-family-sans-serif;
+  border: none;
+  color: #989E9B;
+  font-size: 14px;
+  padding: 60px 0 0;
+
+  .address{
+    img{
+      margin-bottom: 15px;
+    }
+    p{
+      margin-left: 45px;
+    }
+  }
+
+  ul{
+    .head{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #161616;
+      text-transform: uppercase;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    li a {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #656565;
+      margin-bottom: 8px;
+      display: inline-block;
+
+      &:visited {
+        color: #656565;
+      }
+    }
+  }
+
+  .right-part{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    .provenexpert{
+      flex-shrink: 0; 
+      order: 1;
+      img {
+        width: 150px;
+      }
+    }
+  }
+
+  .numPhone{
+    position: relative;
+    margin-left: 10px;
+    background: #DDF8F0;
+    width: 160px;
+    height: 44px;
+    padding: 12px 0px 0 45px;
+    font-size: 14px;
+
+    img{
+      position: absolute;
+      bottom: -4px;
+      left: 9px;
+      width: 22%;
+    }
+
+    span{
+      margin-left: 10px;
+      a{
+        color: #161616;
+        text-decoration: none;
+        font-size: 14px;
+        &:hover{
+          text-decoration: underline;
+          color: #00B383;
+        }
+        &:visited{
+          color: #00B383;
+        }
+      }
+    }
+  }
+
+  .proven-text {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footerBottom{
+    margin-top: 40px;
+    padding: 25px 0;
+    border-top: 1px solid #F2F5F4;
+    a{
+      color: #01997d;
+    }
+    p.initial-text{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #888888;
+
+      a {
+        color: #1DBD9C;
+      }
+    }
+    ul{
+      padding: 0;
+      margin: 0;
+      li{
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+    p.seo{
+      word-wrap: break-word;
+      font-size: 14px;
+      h1{
+        font-size: 16px;
+      }
+      h2{
+        font-size: 16px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 992px) { 
+  
+  footer {
+    width: 97%;
+
+    .proven-text {
+      justify-content: flex-start;
+    }
+  }
+}

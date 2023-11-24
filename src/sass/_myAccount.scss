@@ -1,0 +1,101 @@
+.changePasswordForm {
+  label{
+    display: block;
+  }
+  input{
+    margin: 0;
+  }
+  input.errorInput{
+    border: 1px solid #ff0000;
+  }
+  input[type='submit']{
+    margin-top: 10px;
+  }
+}
+.editFormWrap{
+  padding: 15px;
+}
+//Overview Order Page
+.header select{
+  margin-top: 30px;
+}
+.status_bar{
+  position: relative;
+  height: 15px;
+  margin-top: 10px;
+  &-count{
+    height: 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .statusVerkaufen-1{
+    background: #449d44;
+    width:  25%;
+  }
+  .statusVerkaufen-2{
+    background: #eda309;
+    width:  66%;
+  }
+  .statusVerkaufen-3{
+    background: #00b41c;
+    width:  75%;
+  }
+  .statusVerkaufen-6{
+    background: #449d44;
+    width:  100%;
+  }
+  .statusKaufen-1{
+    background: #449d44;
+    width:  33%;
+  }
+  .statusKaufen-2{
+    background: #449d44;
+    width:  66%;
+  }
+  .statusKaufen-3{
+    background: #449d44;
+    width:  100%;
+  }
+}
+.overview_orders_item_basket{
+  margin-bottom: 15px;
+  &-model{
+  }
+}
+//convertCredits
+.convertCredits{
+  tr>td{
+    text-align: center;
+  }
+  tr.status1{
+    background: #ffdf3c;
+    &:hover td{
+      @extend tr.status1
+    }
+  }
+  tr.status3{
+    background: #18ff24;
+    &:hover td{
+      @extend tr.status3
+    }
+  }
+  tr.status2{
+    background: #ff7d20;
+    &:hover td{
+      @extend tr.status2
+    }
+  }
+}
+.convertCreditsForm{
+  label{
+    display: block;
+  }
+  input{
+    display: block;
+    width: 100%;
+    &[type='submit']{
+      width: auto;
+    }
+  }
+}

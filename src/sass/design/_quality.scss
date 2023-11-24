@@ -1,0 +1,194 @@
+.qualitaet {
+  position: relative;
+
+  .fake-header.header-mobile,
+  .header-mobile.scrolling-header,
+  footer{
+    display: none;
+    background: #fff;
+
+    @media all and (max-width:479px) {
+      display: block;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: -140px;
+    height: calc(100% + 140px);
+    z-index: -1;
+    background: url(/images/design/bg-header-jobs.png) no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &-title {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.07;
+    color: #ffffff;
+
+    @media all and (max-width:576px) {
+      text-align: center;
+    }
+  }
+
+  &-content {
+    margin-top: 30px;
+    padding-bottom: 70px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #ffffff;
+
+    @media all and (max-width:576px) {
+      text-align: center;
+    }
+  }
+
+  &-look {
+    padding: 45px 0 95px;
+    background: #f7faf9;
+
+    &__subtitle {
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1.1px;
+      color: #b8d4cb;
+      text-align: center;
+
+      @media all and (max-width:576px) {
+        display: none;
+      }
+    }
+
+    &__title {
+      font-size: 36px;
+      font-weight: 500;
+      text-align: center;
+      color: #23224d;
+    }
+
+    &__checkbox {
+      padding: 0;
+      margin: 70px 0 0 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+
+      @media all and (max-width:576px) {
+        width: 85%;
+        margin: 0 auto;
+        flex-direction: column;
+      }
+    }
+
+    &__checkitem {
+      width:260px;
+      max-width:260px;
+      height: 65px;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #e8ebe9;
+      cursor: pointer;
+      color: #e8ebe9;
+      background: transparent;
+
+      @media all and (max-width:767px) {
+        max-width: 180px;
+      }
+      @media all and (max-width:576px) {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      &_checked {
+        background: #e3fcf5;
+        color: #02a688;
+      }
+
+      img {
+        padding-right: 10px;
+      }
+
+      &:nth-of-type(2) {
+        border-left: none;
+        border-right: none;
+
+        @media all and (max-width:576px) {
+          border-top: none;
+          border-bottom: none;
+          border-left: 1px solid #e8ebe9;
+          border-right: 1px solid #e8ebe9;
+        }
+      }
+      &:last-of-type {
+        img {
+          width: 40px;
+        }
+      }
+    }
+
+    @media all and (max-width:576px) {
+      padding: 40px 0 30px;
+    }
+  }
+
+  &-wrapper {
+    background: #f7faf9;
+    padding-bottom: 70px;
+
+    &__item {
+      height: 570px;
+      margin-bottom: 5%;
+      padding: 110px 90px 90px 90px;
+      text-align: center;
+      background: #fff;
+
+
+      @media all and (max-width:992px){
+        padding: 30px;
+      }
+
+      @media all and (max-width:767px){
+        height: auto;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        margin-bottom:20px;
+      }
+      h3{
+        font-size: 29px;
+        font-weight: 500;
+        line-height: 1.34;
+        color: #02c97f;
+
+        @media all and (max-width:992px){
+          font-size: 26px;
+        }
+        @media all and (max-width:576px) {
+          font-size: 18px;
+        }
+      }
+      p{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #989e9b;
+      }
+    }
+  }
+}
+
+.sticky{
+  position: fixed;
+  background: #fff;
+  z-index: 9999;
+}

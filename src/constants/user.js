@@ -1,0 +1,5 @@
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS";
+export const REDIRECT_TO = "REDIRECT_TO";
+export const CANCEL_REDIRECT_TO = "CANCEL_REDIRECT_TO";
+export const MSG_INFO = "MSG_INFO";

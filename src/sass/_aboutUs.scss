@@ -1,0 +1,76 @@
+.agb-item-div{
+  h5{
+    padding: 30px 0 5px 0;
+    border-bottom: 1px solid #CCC;
+    color: #000;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  p{
+    padding: 0 0 15px 0;
+    line-height: 1.5;
+  }
+}
+.agb-header{
+  color: #000;
+  font-size: 24px;
+  margin: 30px 0 15px 0;
+  letter-spacing: 0;
+  font-weight: 200;
+  line-height: 1.2;
+}
+ol{
+  list-style: circle inside;
+}
+//faq Page
+.faqPage-accordion{
+  li{
+    display: block;
+    h3.title, i{
+      cursor: pointer;
+    }
+    h3{
+      display: inline-block;
+      font-weight: 600;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+    .content{
+      display: none;
+      border: 1px solid #909090;
+      padding: 10px;
+      margin: 15px 0;
+      h3{
+        font-size: 18px;
+        color: #000!important;
+        margin-top: 0;
+      }
+    }
+    i{
+      font-size: 20px;
+    }
+  }
+  li.active{
+    h3{
+      color: #008acb;
+      font-weight: 900;
+    }
+    .content{
+      display: block;
+    }
+    i{
+      color: #008acb;
+    }
+  }
+}
+
+button.downloadPDF{
+  margin: 50px auto;
+  display: block;
+}
+.error{
+  text-align: center;
+  color: #ff0000;
+}

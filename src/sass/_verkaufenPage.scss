@@ -1,0 +1,80 @@
+.questionWrap{
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+  label{
+    margin-right: 20px;
+    input{
+      margin-right: 15px;
+    }
+  }
+}
+.smallModel.model .row{
+  width: 100px;
+  height: 100px;
+  .image{
+    width: 100%;
+    height: 70%;
+    margin: 0;
+  }
+  .title{
+    font-size: 12px;
+    padding: 0;
+  }
+}
+.infoPriceMsg{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background: #ffff00;
+  margin-top: 25px;
+  text-align: center;
+  padding: 30px;
+}
+a.verkaufenPageAnswers-defects{
+  text-align: left;
+  color: #000;
+  border: none;
+  &:hover{
+    color: #000;
+  }
+  .itemValueClientQuestion{
+    width: 100%;
+  }
+}
+a.verkaufenPageAnswers{
+  display: inline-block;
+  color: #000;
+  border: none;
+  &:hover{
+    color: #000;
+  }
+}
+button.btnPDF{
+  display: inline-block;
+  padding: 5px 15px;
+  background: #FFF;
+  color: #000;
+  border-color: 2px solid #EEE;
+  border-radius: 2px;
+  position: relative;
+}
+button.btnPDFGenerating{
+  @extend button.btnPDF;
+  padding: 5px 40px 5px 15px;
+  &:after{
+    background-image: url(/images/loader.gif);
+    background-size: 20px 20px;
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.resultSellPage {
+  display: block;
+}

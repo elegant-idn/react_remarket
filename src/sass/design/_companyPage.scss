@@ -1,0 +1,525 @@
+@import "../variables";
+
+.companyPage{
+  font-family: $font-family-sans-serif;
+  section.top{
+    padding: 135px 0 290px;
+    position: relative;
+    overflow: hidden;
+    .triangle{
+      position: relative;
+      img.big{
+        position: absolute;
+        left: -178px;
+        z-index: -1;
+      }
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: -311px;
+      left: -300px;
+      background-image: linear-gradient(262deg, #ddf8f0, rgba(221, 248, 240, 0));
+      -webkit-transform: rotate(-137deg);
+      transform: rotate(-137deg);
+      width: 900px;
+      height: 100%;
+    }
+    .phone{
+      position: absolute;
+      right: 0;
+      top: 200px;
+      z-index: -1;
+    }
+    img.bigTriangle{
+      position: absolute;
+      right: 225px;
+      top: 150px;
+      z-index: -2;
+    }
+    img.grayTriangle{
+      position: absolute;
+      right: 0;
+      top: 90px;
+      z-index: -3;
+    }
+    .title{
+      font-size: 45px;
+      font-weight: bold;
+      line-height: 1.13;
+      text-align: left;
+      color: #000000;
+      padding: 0;
+      margin: 0;
+    }
+    .text{
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      text-align: left;
+      color: #4a4a4a;
+      padding: 0;
+      margin: 27px 0 65px;
+    }
+    .btn{
+      padding: 18px 12px 18px 20px;
+      display: block;
+      span{
+        background: #fff;
+        border: none;
+        color: #02ca95;
+      }
+    }
+    .callToUs{
+      display: inline-block;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.31;
+      color: #02ca95;
+      text-decoration: underline;
+      margin-top: 19px;
+    }
+  }
+  section.corporate{
+    position: relative;
+    margin-top: 195px;
+    &:before{
+      content: url(/images/design/company-umbrella.png);
+      position: absolute;
+      top: -87px;
+      left: 552px;
+    }
+    .wrapCorporate{
+      position: relative;
+      overflow: hidden;
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 150px;
+        background-image: linear-gradient(262deg, #ddf8f0, rgba(221, 248, 240, 0));
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        width: 800px;
+        height: 900px;
+        z-index: -1;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 140px;
+        border-bottom: 0px solid transparent;
+        border-top: 590px solid transparent;
+        border-left: 660px solid #fff;
+        z-index: -1;
+      }
+    }
+    .wrap{
+      padding: 100px 0 236px;
+      position: relative;
+    }
+    img{
+      position: absolute;
+      left: -2px;
+      top: -195px;
+    }
+    .right-side{
+      p.title{
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        color: #b8d4cb;
+        margin-bottom: 9px;
+      }
+      p.caption{
+        padding: 0;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.4;
+        margin-bottom: 32px;
+        color: #23224d;
+      }
+      p.text{
+        padding: 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.88;
+        color: #4a4a4a;
+      }
+    }
+  }
+  section.insurance{
+    margin: 200px 0 135px;
+    .wrap{
+      position: relative;
+      .image{
+        position: absolute;
+        right: 0;
+        top: -215px;
+        z-index: 1;
+        &:before{
+          content: url(/images/design/company-insurance-before.png);
+          position: absolute;
+          top: 57px;
+          left: -81px;
+        }
+        &:after{
+          content: url(/images/design/company-insurance-after.png);
+          position: absolute;
+          top: -64px;
+          right: -69px;
+        }
+      }
+    }
+    p.title{
+      padding: 0;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1.2px;
+      color: #b8d4cb;
+      margin-bottom: 9px;
+    }
+    p.caption{
+      padding: 0;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 32px;
+      color: #23224d;
+    }
+    p.text{
+      padding: 0;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.88;
+      color: #4a4a4a;
+    }
+  }
+  section.plans{
+    padding-top: 300px;
+    background: url("/images/design/bg-plans.png");
+    position: relative;
+    .wrapPlans{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      .itemPlan{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column nowrap;
+        margin-right: 40px;
+        padding: 30px 33px;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom, #ffffff, #fafbfc);
+        box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.05), 11px 28px 35px 0 rgba(186, 195, 209, 0.25);
+        &:last-child{
+          margin-right: 0;
+        }
+        .title{
+          line-height: 1;
+          font-size: 14px;
+          font-weight: bold;
+          text-align: center;
+          text-transform: uppercase;
+          color: #b8d4cb;
+          padding: 0;
+          margin-bottom: 30px;
+        }
+        .caption{
+          line-height: 1;
+          font-size: 64px;
+          font-weight: 600;
+          text-align: center;
+          color: #30323d;
+          padding: 0;
+          margin-bottom: 32px;
+        }
+        button{
+          width: 100%;
+          border-radius: 3px;
+          background-color: #ffffff;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08);
+          font-size: 11px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          color: #08a98b;
+          padding: 18px 12px 18px 34px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          text-transform: capitalize;
+          span{
+            border: none;
+            border-radius: 100px;
+            background-color: #f2f5f4;
+          }
+        }
+        ul{
+          li{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 2.86;
+            text-align: left;
+            color: #30323d;
+            position: relative;
+            padding-left: 8px;
+            .circleOk{
+              position: absolute;
+              top: 11px;
+              left: -13px;
+              display: inline-block;
+              width: 17px;
+              height: 17px;
+              border: 2px solid #30323d;
+              border-radius: 50%;
+              &:before{
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 4px;
+                border: solid #30323d;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 0;
+                transform: rotate(42deg);
+                -webkit-transform: rotate(42deg);
+                width: 5px;
+                height: 7px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  section.sponsors{
+    padding: 140px 0 105px;
+    .wrapSponsors{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin-bottom: 26px;
+      img{
+        max-width: 212px;
+        max-height: 82px;
+        object-fit: contain;
+        &.alpiq{
+          width: 117px;
+        }
+      }
+    }
+  }
+  section.form{
+    position: relative;
+    padding-bottom: 190px;
+    &:before{
+      position: absolute;
+      top: -65px;
+      left: calc(50% - 87px);
+      content: url(/images/design/companyRegister-icon.svg);
+    }
+    .title{
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      color: #000000;
+      padding: 95px 0 0;
+      margin-bottom: 120px;
+    }
+    .wrapForm{
+      background-image: linear-gradient(to bottom, #f2f5f4, #ffffff);
+      position: relative;
+      &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        content: '';
+        background: url('/images/design/topLineCompanyForm.svg') no-repeat;
+        background-size: 100%;
+      }
+      .mainPart{
+        display: flex;
+        margin-top: -50px;
+      }
+      form{
+        display: inline-block;
+        width: 50%;
+        border-bottom-left-radius: 40px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        background-image: linear-gradient(to bottom, #ffffff, #fafbfc);
+        box-shadow: 0 50px 55px 0 rgba(0, 0, 0, 0.2);
+        padding: 60px 83px 45px;
+        .successMsg{
+          color: #03c958;
+        }
+        p.title{
+          font-size: 12px;
+          font-weight: bold;
+          padding: 0;
+          margin: 0 0 28px;
+          color: #000000;
+          text-align: left;
+        }
+        .wrapLabel{
+          display: flex;
+        }
+        label{
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+          margin-right: 30px;
+          position: relative;
+          width: auto;
+          font-size: 12px;
+          color: #989e9b;
+          input[type='radio']{
+            width: 1px;
+            padding: 0;
+            margin: 0 25px 0 2px;
+            outline: none;
+          }
+          span{
+            position: absolute;
+            left: 0;
+            background: #fff;
+            width: 18px;
+            height: 18px;
+            border: solid 1px #e8ebe9;
+            display: inline-block;
+            border-radius: 50%;
+            margin-right: 8px;
+            color: #00cb94;
+            &.check{
+              border-radius: 0;
+              position: relative;
+            }
+          }
+          input[type='radio']:checked + span:before{
+            content: "";
+            display: block;
+            position: absolute;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            left: 5px;
+            top: 5px;
+            background: #00cb94;
+          }
+        }
+        input{
+          width: 100%;
+          font-size: 12px;
+          font-weight: 200;
+          line-height: 1.5;
+          text-align: left;
+          color: #989e9b;
+          padding: 13px 16px;
+          margin: 0 0 16px;
+          &::-webkit-input-placeholder {
+            font-size: 12px;
+            font-weight: 200;
+            color: #989e9b;
+          }
+        }
+        .phoneNumber{
+          display: flex;
+          align-items: center;
+          margin-bottom: 5px;
+          .Select{
+            width: 35%;
+            .Select-menu{
+              max-height: 180px;
+            }
+            .Select-value-label{
+              font-size: 12px;
+              font-weight: 200;
+              color: #989e9b;
+            }
+            ::-webkit-scrollbar {
+              width: 2px;
+            }
+            ::-webkit-scrollbar-thumb {
+              border-radius: 100px;
+              background-color: transparent;
+            }
+          }
+          input[name="phoneNumber"]{
+            width: 60%;
+            display: inline-block;
+            margin: 0 0 0 5%;
+          }
+          &+.error{
+            margin-left: 40%;
+          }
+        }
+        #g-recaptcha{
+          margin: 16px 0;
+        }
+        .btn{
+          margin: 42px auto 0;
+          display: block;
+          text-transform: capitalize;
+          span{
+            background: #fff;
+            border: none;
+            color: #02ca95;
+          }
+        }
+      }
+      .commentPart{
+        display: inline-block;
+        width: 50%;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        background-image: linear-gradient(216deg, #03c958, #02c99b);
+        box-shadow: 0 50px 55px 0 rgba(0, 0, 0, 0.2);
+        padding: 83px 29px 0 49px;
+        .commentText{
+          padding: 0;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 1.64;
+          text-align: left;
+          color: #ffffff;
+          margin: 0 0 63px;
+        }
+        .userInfo{
+          display: flex;
+          align-items: center;
+          margin-bottom: 86px;
+          img{
+            width: 65px;
+            height: 60px;
+            border-radius: 50%;
+          }
+          .user{
+            margin-left: 22px;
+            p.name{
+              padding: 0;
+              font-size: 18px;
+              font-weight: 600;
+              margin: 0;
+              color: #ffffff;
+            }
+            p.position{
+              font-size: 14px;
+              font-weight: 100;
+              color: #fff;
+              padding: 0;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

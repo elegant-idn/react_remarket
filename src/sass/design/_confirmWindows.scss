@@ -1,0 +1,140 @@
+@import "../variables";
+
+.paymentPage {
+  font-family: $font-family-sans-serif;
+  background: #f8fafa;
+  .wrapWindow {
+    background: #fff;
+    margin: 90px 0 40px;
+    padding: 78px 210px 89px 187px;
+    .total {
+      display: flex;
+      align-items: center;
+      margin-bottom: 47px;
+      padding: 0 24px;
+      .title {
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: #b8d4cb;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+      }
+      .priceTotal {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: right;
+        color: #02ca95;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .circle {
+      width: 141px;
+      height: 141px;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+    .bigText {
+      font-size: 24px;
+      font-weight: 600;
+      color: #000000;
+      margin-top: 50px;
+      padding: 0;
+    }
+    .smallText {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #989e9b;
+      margin-top: 17px;
+      margin-bottom: 36px;
+    }
+    .ok {
+      background: url("/images/design/confirm-ok.svg") no-repeat 53px 54px
+        #00cb94;
+    }
+    .false {
+      background: url("/images/design/confirm-false.svg") no-repeat 68px 50px
+        #ff2553;
+    }
+    .wrapBasketItems {
+      padding: 15px 24px;
+      border-radius: 3px;
+      border: solid 1px #e8ebe9;
+      margin-bottom: 10px;
+      .itemModel {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        .model {
+          margin: 5px 0 0;
+          text-align: left;
+          p {
+            font-size: 12px;
+            line-height: 1.5;
+            color: #000000;
+            padding: 0;
+            margin: 0;
+            &:first-child {
+              font-weight: bold;
+            }
+          }
+        }
+        .price p {
+          padding: 0;
+          margin: 0;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1;
+          text-align: right;
+          color: #00cb94;
+          &.old-price {
+            font-size: 14px;
+            color: #000;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+    .btn.false {
+      background: #ff2553;
+      span {
+        border: 2px solid #ffffff;
+        opacity: 0.2;
+      }
+    }
+    a {
+      color: #fff;
+    }
+  }
+}
+#modalCounterOfferDeclained .paymentPage .wrapWindow {
+  margin: 0;
+  padding: 54px 105px 100px;
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    span {
+      font-size: 12px;
+      font-weight: 500;
+      text-align: left;
+      color: #000000;
+      text-decoration: underline;
+      cursor: pointer;
+      &.accept {
+        color: #01ca9b;
+      }
+    }
+  }
+}
+#modalCounterOfferAccepter .paymentPage .wrapWindow {
+  margin: 0;
+  padding: 54px 105px 100px;
+  .buttons {
+    text-align: center;
+  }
+}
